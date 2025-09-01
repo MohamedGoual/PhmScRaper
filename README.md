@@ -1,4 +1,4 @@
-# E7PhmScRaper 🕷️
+# PhmScRaper 🕷️
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 ![Contributions](https://img.shields.io/badge/contributions-welcome-orange)
 
 **🚀 Advanced Multi-Threaded Web Scraper for Contact Information Extraction By E7ATxT0r**
-
+<img src="tool.png"/>
 </div>
 
 ## 📋 Table of Contents
