@@ -11,26 +11,11 @@
 <img src="tool.png"/>
 </div>
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Command Line Arguments](#command-line-arguments)
-- [Output Formats](#output-formats)
-- [Examples](#examples)
-- [Configuration](#configuration)
-- [Performance](#performance)
-- [Security Features](#security-features)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🎯 Overview
 
-E7PhmScRaper is a powerful, multi-threaded web scraping tool designed to extract contact information (emails and phone numbers) from websites efficiently. Built with Python, it combines advanced pattern matching, concurrent processing, and intelligent filtering to deliver fast and accurate results.
+PhmScRaper is a powerful, multi-threaded web scraping tool designed to extract contact information (emails and phone numbers) from websites efficiently. Built with Python, it combines advanced pattern matching, concurrent processing, and intelligent filtering to deliver fast and accurate results.
 
-### 🌟 Why Choose E7PhmScRaper?
+### 🌟 Why Choose PhmScRaper?
 
 - **🔥 Lightning Fast**: Multi-threaded architecture with configurable workers
 - **🎯 Intelligent Extraction**: Advanced regex patterns for emails and phone numbers
@@ -83,13 +68,11 @@ E7PhmScRaper is a powerful, multi-threaded web scraping tool designed to extract
 python >= 3.7
 ```
 
-```
-
 ### Quick Install
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/E7PhmScRaper.git
-cd E7PhMScRaper
+git clone https://github.com/MohamedGoual/PhmScRaper.git
+cd PhmScRaper
 bash setup.sh
 ```
 
@@ -102,22 +85,22 @@ bash setup.sh
 
 #### Single URL
 ```bash
-python E7PhmScRaper.py -u https://example.com -o results
+python PhmScRaper.py -u https://example.com -o results
 ```
 
 #### Multiple URLs
 ```bash
-python E7PhmScRaper.py -u https://site1.com https://site2.com https://site3.com -o my_results
+python PhmScRaper.py -u https://site1.com https://site2.com https://site3.com -o my_results
 ```
 
 #### From File
 ```bash
-python E7PhmScRaper.py -f urls.txt -o batch_results
+python PhmScRaper.py -f urls.txt -o batch_results
 ```
 
 #### Advanced Configuration
 ```bash
-python E7PhmScRaper.py -f urls.txt -w 20 -t 45 -d 0.5 --depth 3 --export json -o advanced_results
+python PhmScRaper.py -f urls.txt -w 20 -t 45 -d 0.5 --depth 3 --export json -o advanced_results
 ```
 
 ## 📝 Command Line Arguments
@@ -174,7 +157,7 @@ Phone,+1-555-123-4567,https://example.com/contact
 
 #### 1. Quick Single Site Scan
 ```bash
-python E7PhmScRaper.py -u example.com -o quick_scan
+python PhmScRaper.py -u example.com -o quick_scan
 ```
 
 #### 2. Bulk URL Processing
@@ -187,12 +170,12 @@ https://company3.com
 
 Run scraper:
 ```bash
-python E7PhmScRaper.py -f urls.txt -o bulk_results
+python PhmScRaper.py -f urls.txt -o bulk_results
 ```
 
 #### 3. High-Performance Scraping
 ```bash
-python E7PhmScRaper.py -f large_urls.txt -w 50 -t 20 -d 0.2 --depth 4 -o high_perf_results
+python PhmScRaper.py -f large_urls.txt -w 50 -t 20 -d 0.2 --depth 4 -o high_perf_results
 ```
 
 ### URL File Format
@@ -322,24 +305,12 @@ We welcome contributions! Here's how you can help:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **E7ATxT0r** - Original developer and maintainer
-- **Contributors** - Thanks to all who have contributed to this project
-- **Community** - For feedback and feature suggestions
-
-## 📞 Support
-
-### Getting Help
-- 📚 **Documentation**: Check this README first
-- 🐛 **Issues**: [GitHub Issues](https://github.com/E7ATxT0r/E7PhMScRaper/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/E7ATxT0r/E7PhMScRaper/discussions)
+*Discussions**: [GitHub Discussions](https://github.com/E7ATxT0r/E7PhMScRaper/discussions)
 
 ### Contact
-- **Developer**: E7ATxT0r
-- **Email**: [E7ATxT0r@proton.me]
-- **GitHub**: [@E7ATxT0r]
+- **Developer**: MohamedElGoual
+- **Email**: [MohamedElGoual@proton.me]
+- **GitHub**: [@MohamedElGoual]
 
 ---
 
@@ -347,6 +318,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ If you found this tool useful, please give it a star! ⭐**
 
-Made with ❤️ by E7ATxT0r
+Made with ❤️ by MohamedElGoual
 
 </div>
