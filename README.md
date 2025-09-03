@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/status-Active-brightgreen)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-orange)
 
-**🚀 Advanced Multi-Threaded Web Scraper for Contact Information Extraction By E7ATxT0r**
+**🚀 Advanced Multi-Threaded Web Scraper for Contact Information Extraction By MohamedGoual**
 <img src="tool.png"/>
 </div>
 
