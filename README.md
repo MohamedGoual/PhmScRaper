@@ -76,7 +76,7 @@ git clone https://github.com/MohamedGoual/PhmScRaper
 cd PhmScRaper
 ```
 ```bash
-bash setup.sh
+bash setup.bash
 ```
 
 ## 🚀 Usage
