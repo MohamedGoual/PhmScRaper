@@ -1,4 +1,10 @@
-pip install --break-system-packages --root-user-action=ignore -r requirements.txt beautifulsoup4
+#!/bin/bash
+
+if ! command -v pip &> /dev/null; then
+    curl -sS https://bootstrap.pypa.io/get-pip.py | python3
+fi
+
+pip install --break-system-packages --root-user-action=ignore -r requirements.txt
 
 if [[ "$PREFIX" == *"com.termux"* ]] || [[ -d "$PREFIX" && "$PREFIX" == "/data/data/com.termux/files/usr" ]]; then
     INSTALL_DIR="$PREFIX/bin"
@@ -19,16 +25,20 @@ if [[ "$PREFIX" != *"com.termux"* ]]; then
         exit 1
     fi
 fi
+
 cp PhMScRaper.py "$INSTALL_DIR/PhMScRaper.py"
 chmod +x "$INSTALL_DIR/PhMScRaper.py"
+
 cat > "$INSTALL_DIR/$SCRIPT_NAME" << EOF
 #!/bin/bash
 SCRIPT_DIR="\$(dirname "\$(readlink -f "\$0")")"
 python3 "\$SCRIPT_DIR/PhMScRaper.py" "\$@"
 EOF
+
 if [[ "$PREFIX" == *"com.termux"* ]]; then
     sed -i 's|\$SCRIPT_DIR/PhMScRaper.py|'"$PREFIX"'/bin/PhMScRaper.py|g' "$INSTALL_DIR/$SCRIPT_NAME"
 fi
+
 chmod +x "$INSTALL_DIR/$SCRIPT_NAME"
 echo -e "\e[32mInstallation completed successfully!\e[0m"
 echo -e "\e[32mYou can now use: $SCRIPT_NAME -f websites.txt -o database\e[0m"
