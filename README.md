@@ -70,20 +70,17 @@ python >= 3.7
 
 ### Quick Install
 ```bash
-# Clone the repository
-git clone https://github.com/MohamedGoual/PhmScRaper.git
+git clone https://github.com/MohamedGoual/PhmScRaper
+```
+```bash
 cd PhmScRaper
+```
+```bash
 bash setup.sh
 ```
 
 ## 🚀 Usage
-
-
-```
-
 ### Command Line Mode
-
-#### Single URL
 ```bash
 python PhmScRaper.py -u https://example.com -o results
 ```
