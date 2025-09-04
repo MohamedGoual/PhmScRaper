@@ -70,6 +70,9 @@ python >= 3.7
 
 ### Quick Install
 ```bash
+pkg install git
+```
+```bash
 git clone https://github.com/MohamedGoual/PhmScRaper
 ```
 ```bash
